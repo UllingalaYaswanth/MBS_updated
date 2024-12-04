@@ -8,14 +8,14 @@ const Footer = () => {
 
   return (
     <footer className="bg-footer-gradient rounded-t-[56px] opacity-100 text-white">
-      <div className="px-40 mx-auto text-center flex flex-col md:flex-row justify-between items-center h-full space-y-6 md:space-y-0 py-14">
-        <div className="text-center text-xs py-10 flex flex-col flex-between">
+      <div className="xl:px-24 lg:px-10 mx-auto text-center flex flex-col md:flex-row justify-between items-center h-full space-y-6 md:space-y-0 py-14 gap-40">
+        <div className="text-center text-xs py-10 flex flex-col">
           <a href='#'>
             <img src={logo} alt="Logo" width={200} height={30} className="mr-6" />
           </a>
           <p className='mt-20 text-neutral-400'>&copy; {new Date().getFullYear()} Mbstech.ai All rights reserved.</p>
         </div>
-        <div className='flex gap-40'>
+        <div className='flex justify-between max-w-5xl w-full'>
         <div className='flex flex-col gap-10'>
             <div className='space-y-4'>
                 <h1 className='text-[#EA5C5F] text-lg text-start'>Call</h1>
