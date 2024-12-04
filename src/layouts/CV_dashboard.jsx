@@ -23,16 +23,15 @@ const CV_dashboard = () => {
         <div id="rust" className="py-10">
           <Rust />
         </div>
-        <div className="max-w-7xl mx-auto pt-10 px-6">
+        <div className="pt-10 px-6">
         <div id="feature" className="py-20">
           <Feature />
         </div>
         <div id="features" className="py-20">
           <Features />
         </div>
-     
-        <Footer />
         </div>
+        <Footer />
         </div>
       </div>
     );

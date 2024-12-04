@@ -135,7 +135,7 @@ function Projects() {
     ),
     project3: (
       <>
-        <section className="mb-6 max-h-[700px] overflow-y-scroll  text-white">
+        <section className="mb-6 max-h-[700px] overflow-y-scroll">
         <div className="min-h-screen p-8">
       <div className="max-w-4xl mx-auto  rounded-lg p-6">
         {/* Introduction Section */}
@@ -183,7 +183,7 @@ function Projects() {
     ),
     project4: (
       <>
-        <section className="mb-6 max-h-[700px] overflow-y-scroll  text-white">
+        <section className="mb-6 max-h-[700px] overflow-y-scroll ">
         <div className="min-h-screen  py-10">
       <div className="max-w-4xl mx-auto px-6 shadow-md rounded-lg p-8">
         <h1 className="text-3xl font-bold text-center mb-6 ">
@@ -236,7 +236,7 @@ function Projects() {
 
       {/* Project 1 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>
-        <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/int.mp4" autoPlay muted loop className='md:w-[500px] rounded-md' />
+        <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Tower_Reconstruction.mp4" autoPlay muted loop className='md:w-[500px] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='mb-2 text-xl sm:text-3xl lg:text-4xl'>Tower Reconstruction</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">We undertook the monumental task of reconstructing 10,000 towers, leveraging our 3D reconstruction and digital twin technologies to ensure structural integrity and compliance with modern standards. This project not only enhanced our portfolio but also established our credibility in the industry, landing us numerous contracts in city planning.</p>
@@ -245,7 +245,7 @@ function Projects() {
           </p>
         </div>
       </div>
-      <Popup isOpen={isOpen.project1} onClose={() => togglePopup('project1')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/int.mp4" title="Project Overview: Tower Reconstruction" content={projectContent.project1} />
+      <Popup isOpen={isOpen.project1} onClose={() => togglePopup('project1')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Tower_Reconstruction.mp4" title="Project Overview: Tower Reconstruction" content={projectContent.project1} />
 
       {/* Project 2 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 lg:space-y-0 items-center'>
@@ -262,7 +262,7 @@ function Projects() {
 
       {/* Project 3 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>
-        <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/dams.mp4" autoPlay muted loop className='w-full md:w-[500px] rounded-md' />
+        <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Critical_Inspections.mp4" autoPlay muted loop className='w-full md:w-[500px] rounded-md' />
         <div className='flex justify-center flex-col'>
           <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>Critical Inspections</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">We have performed comprehensive inspections of critical dam infrastructure using our digital twin technology. Our solutions enable real-time monitoring of structural health, ensuring safety and compliance with regulatory standards.</p>
@@ -271,7 +271,7 @@ function Projects() {
           </p>
         </div>
       </div>
-      <Popup isOpen={isOpen.project3} onClose={() => togglePopup('project3')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/dams.mp4" title="Project Overview: Critical Inspections" content={projectContent.project3} />
+      <Popup isOpen={isOpen.project3} onClose={() => togglePopup('project3')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Critical_Inspections.mp4" title="Project Overview: Critical Inspections" content={projectContent.project3} />
 
       {/* Project 4 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 lg:space-y-0 items-center'>
@@ -282,9 +282,9 @@ function Projects() {
             <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>Learn More..</span>
           </p>
         </div>
-        <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/railway.mp4" autoPlay muted loop className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
+        <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Railway_Bridge_Inspections.mp4" autoPlay muted loop className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
       </div>
-      <Popup isOpen={isOpen.project4} onClose={() => togglePopup('project4')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/railway.mp4" title="Project Overview: Railway Bridge Inspections" content={projectContent.project4} />
+      <Popup isOpen={isOpen.project4} onClose={() => togglePopup('project4')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Railway_Bridge_Inspections.mp4" title="Project Overview: Railway Bridge Inspections" content={projectContent.project4} />
     </div>
   );
 }

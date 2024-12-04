@@ -82,7 +82,7 @@ const Feature = () => {
     };
 
     return (
-        <div className="font-sans max-w-7xl mx-auto p-5">
+        <div className="mx-auto p-5 px-10">
             <header className="text-center mb-20">
                 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
                     Our {" "}
@@ -101,7 +101,7 @@ const Feature = () => {
                 </button>
             </div>
 
-            <nav className={`flex justify-center ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex`}>
+            <nav className={`flex justify-between ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex`}>
                 {feature.map(({ text }, index) => (
                     <button
                         key={index}

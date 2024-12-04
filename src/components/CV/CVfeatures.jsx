@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react';
 import React, { useRef } from 'react';
 import { animateWithGsap } from '../../utils/animations';
-import { explore1Img, explore2Img, exploreVideo } from '../../utils';
+import { explore1Img, explore2Img,} from '../../utils';
 import gsap from 'gsap';
 const Features = () => {
   const videoRef = useRef();
@@ -21,7 +21,7 @@ const Features = () => {
     animateWithGsap('.g_text', { y: 0, opacity: 1, ease: 'power2.inOut', duration: 1 });
   }, []);
   return (
-    <section className="bg-zinc-800 relative overflow-hidden py-16 max-w-7xl mx-auto">
+    <section className="bg-zinc-800 relative overflow-hidden py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 ">
           <h1 id="features_title" className="text-4xl font-semibold bg-gradient-to-r from-pink-700 via-orange-500 to-orange-200 text-transparent bg-clip-text">Explore Our Vision</h1>
@@ -38,7 +38,7 @@ const Features = () => {
                    loop
                    ref={videoRef}
                  >
-                   <source src={exploreVideo} type="video/mp4" />
+                   <source src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/CV_Annotations.mp4" type="video/mp4" />
                  </video>
                  <h1 className="text-xl text-white absolute top-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                    Stunning Visuals in Motion

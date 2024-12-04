@@ -86,7 +86,7 @@ const TabSelector = () => {
     };
 
     return (
-        <div className="font-sans max-w-7xl mx-auto p-5">
+        <div className="px-20 p-5">
             <header className="text-center mb-20">
                 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
                     Our {" "}<span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
@@ -107,11 +107,11 @@ const TabSelector = () => {
                 </button>
             </div>
 
-            <nav className={`flex ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex`}>
+            <nav className={`flex justify-between ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex`}>
                 {tabData.map(({ id, name }) => (
                     <button
                         key={id}
-                        className={`px-4 py-2 text-[1.12rem] border-none rounded-md ${activeTab === id ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
+                        className={`px-4 py-2 text-[1.3rem] border-none rounded-md ${activeTab === id ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
                         onClick={() => {
                             setActiveTab(id);
                             if (isNavOpen) handleToggleNav();
@@ -129,7 +129,7 @@ const TabSelector = () => {
                                 <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>
                                     {title}
                                 </h1>
-                                <div className="text-md md:text-lg mt-3 text-neutral-500">
+                                <div className="text-md md:text-xl mt-3 text-neutral-500">
                                     {description}
                                 </div>
                             </div>
