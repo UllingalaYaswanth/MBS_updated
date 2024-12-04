@@ -61,9 +61,9 @@ const TabSelector = () => {
     };
 
     return (
-        <div className="font-sans mx-auto p-5">
+        <div className="mx-auto p-5">
             <div className='relative py-5 flex justify-center '>
-            <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/vc1+(1).mp4" autoPlay muted loop/>
+            <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/Main_Industry_Sectors.mp4" autoPlay muted loop/>
             <header className="text-center mb-20 absolute top-20">
                 <h2 className="text-3xl sm:text-5xl lg:text-7xl mt-10 lg:mt-20 tracking-wide mb-3 text-white">
                     Technologies Transforming {" "}

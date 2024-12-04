@@ -31,7 +31,7 @@ const Hero = () => {
 <section className="w-full nav-height relative bg-black">
   <video
     className="absolute top-0 left-0 w-full h-full object-cover"
-    src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/bg.mp4"
+    src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Herobg.mp4"
     autoPlay
     loop
     muted

@@ -23,7 +23,7 @@ const Towers = () => {
       <section id="features">
         <Highlights />
       </section>
-      <section className='max-w-7xl mx-auto'>
+      <section className=''>
         <Solution/>
       </section>
       

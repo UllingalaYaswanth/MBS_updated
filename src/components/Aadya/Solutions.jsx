@@ -7,7 +7,7 @@ const Solutions = () => {
     const [activeTab, setActiveTab] = useState('tab1');
 
     return (
-        <div className="font-sans max-w-7xl mx-auto mt-20 p-5">
+        <div className=" px-20 mt-20 p-5">
             <div className="text-center mb-20">
                 <h2 className="h2 mb-4 md:mb-8 ">
                     Our{" "}
@@ -17,11 +17,11 @@ const Solutions = () => {
                 </h2>
             </div>
 
-            <div className="flex cursor-pointer ml-2 mb-5">
+            <div className="flex justify-between cursor-pointer ml-2 mb-5">
                 {solutions.map((solution, index) => (
                     <button
                         key={index}
-                        className={`text-sm px-5 text-[1.009rem] py-2 border-none rounded-md ${activeTab === `tab${index + 1}` ? 'bg-orange-600 text-white' : ''} mr-2`}
+                        className={`px-5 text-[1.3rem] py-2 border-none rounded-md ${activeTab === `tab${index + 1}` ? 'bg-orange-600 text-white' : ''} mr-2`}
                         onClick={() => setActiveTab(`tab${index + 1}`)}
                     >
                         {solution.text}
@@ -40,7 +40,7 @@ const Solutions = () => {
                         <h1 className="text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2">
                             {solution.text}
                         </h1>
-                            <p className="text-md md:text-lg mt-3 text-neutral-500">
+                            <p className="text-md md:text-xl mt-3 text-neutral-500">
                                 {solution.description[0]}
                             </p>
 

@@ -29,13 +29,13 @@ export const hightlightsSlides = [
       "3D Visualization",
       
     ],
-    video: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/tower1.mp4",
+    video: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_3D_Visualization.mp4",
     videoDuration: 3,
   },
   {
     id: 2,
     textLists: ["Digital Dimensional Analysis", "and  maintenance"],
-    video: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/mes.mp4",
+    video: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_TowerMeasurement.mp4",
     videoDuration: 3.5,
   },
   {
@@ -43,7 +43,7 @@ export const hightlightsSlides = [
     textLists: [
       "Annotations for telecom towers.",
     ],
-    video: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/video3.mp4",
+    video: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/CV_Annotations.mp4",
     videoDuration: 4,
   },
 ];
