@@ -194,7 +194,9 @@ const Product2 = () => {
         </div>
       </div>
     </div>
-      <Footer />
+    <div id="footer">
+    <Footer />
+    </div>
     </div>
   );
 };
