@@ -7,12 +7,12 @@ const HeroSection = () => {
       setVantaEffect(
         window.VANTA.NET({
           el: vantaRef.current,
-          mouseControls: false,
-          touchControls: false,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 100.0,
+          minWidth: 100.0,
+          scale: 0.5,
           spacing:20.00,
           scaleMobile: 1.0,
           color: 0xff5100,
@@ -26,7 +26,8 @@ const HeroSection = () => {
     };
   }, [vantaEffect]);
   return (
-    <div ref={vantaRef} className="flex flex-col h-screen justify-center items-center text-center">
+    <div ref={vantaRef}>
+      <div className="flex flex-col h-screen justify-center items-center text-center">
       <h2 className="text-4xl md:text-6xl lg:text-8xl tracking-wide">
         <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
           AI-powered brilliance{" "}
@@ -48,7 +49,7 @@ const HeroSection = () => {
           Discover More
         </a>
       </div>
-
+      </div>
     </div>
   );
 };
