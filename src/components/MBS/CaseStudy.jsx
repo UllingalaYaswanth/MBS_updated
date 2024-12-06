@@ -1,5 +1,4 @@
 import { CheckCircle2 } from "lucide-react";
-import codeImg from "../../assets/6.png";
 import { checklistItems } from "../../constants";
 
 const CaseStudy = () => {
@@ -16,7 +15,7 @@ const CaseStudy = () => {
       </div>
       <div className="flex justify-center mt-10">
         <div className="py-2 w-full mt-12">
-          <img src={codeImg} alt="Coding" className="w-[100%] h-[80%] items-center" />
+          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Why_choose_us.png" alt="Coding" className="w-[100%] h-[80%] items-center" />
         </div>
         <div className=" mt-14 lg:h-[685px] 2xl:h-full pe-10  overflow-y-scroll scrollbar-hide">
           {checklistItems.map((item, index) => (

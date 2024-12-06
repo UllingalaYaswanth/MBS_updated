@@ -1,11 +1,6 @@
 import Section from "./Section";
 import { roadmap } from "../../constants";
 import { grid, } from "../../assets";
-import { Gradient } from "./design/Roadmap";
-import adminPage2 from "../../assets/admin_page2.png";
-import userPage2 from "../../assets/user_page2.png";
-import adminPage1 from "../../assets/admin_page1.png";
-import adminPage3 from "../../assets/admin_page3.png";
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
@@ -49,16 +44,16 @@ const Roadmap = () => (
                   </div>
                   <div className="mb-10 -my-10 -mx-15">
                     {item.id === "0" && (
-                      <img src={userPage2} alt="Neural Networks" />
+                      <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Features_Tailored_Intelligence.png" alt="Neural Networks" />
                     )}
                     {item.id === "1" && (
-                      <img src={adminPage2} alt="IntelliSense" />
+                      <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Features_Usage_Analysis.png" alt="IntelliSense" />
                     )}
                     {item.title === "Security" && (
-                      <img src={adminPage1} alt="Security" />
+                      <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Features_Security.png" alt="Security" />
                     )}
                     {item.title === "Sources" && (
-                      <img src={adminPage3} alt="Sources" />
+                      <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Features_Sources.png" alt="Sources" />
                     )}
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
@@ -69,7 +64,6 @@ const Roadmap = () => (
           );
         })}
 
-        <Gradient />
       </div>
     </div>
   </Section>

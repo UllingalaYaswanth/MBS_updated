@@ -3,13 +3,8 @@ import replay from "../assets/images/replay.svg";
 import play from "../assets/images/play.svg";
 import pause from "../assets/images/pause.svg";
 
-import explore1 from "../assets/cv2.jpeg";
-import explore2 from "../assets/car.jpg";
-import explore3 from "../assets/cv3.jpg";
-import explore4 from "../assets/10.jpeg";
 import explore5 from "../assets/9lvoom5iii.png";
 
-import rust1 from "../assets/rust.png";
 import { Heart, ShoppingCart, Truck, Settings, BarChart2, Lock } from "lucide-react";
 
 
@@ -20,12 +15,7 @@ export const replayImg = replay;
 export const playImg = play;
 export const pauseImg = pause;
 
-export const explore1Img = explore1;
-export const explore2Img = explore2;
-export const explore3Img = explore3;
-export const explore4Img = explore4;
 export const explore5Img = explore5;
-export const rust1Img = rust1;
 
 export const navItems = [
 { label: "Feature", href: "#feature"},

@@ -1,14 +1,8 @@
-import img from '../../../hero.webp'
 import Footer from "../../Footer";
 import Navbar from "../../Navbar";
 import React, { useRef, useState,useEffect } from 'react';
 import Sector_Card from '../Sector_Card';
-import img1 from '../../../assets/img/Rectangle 45@2x.png';
-import img3 from '../../../assets/img/Rectangle 45-2@2x.png';
-import img4 from '../../../assets/img/Rectangle 45-3@2x.png';
-import img5 from '../../../assets/img/Rectangle 45-4@2x.png';
-import img6 from '../../../assets/img/Rectangle 45-5@2x.png';
-import img7 from '../../../assets/img/Rectangle 45-6@2x.png';
+
 import { Monitor, Database, Crop, Truck, TrendingUp } from "lucide-react";  // Importing relevant icons
 
 const Product3 = () => {
@@ -54,17 +48,17 @@ const Product3 = () => {
     {
       title: "Growers",
       description: "Neural Farms provides powerful tools and insights specifically designed for growers to optimize every stage of crop production.",
-      imgSrc: img3, // Replace with an image relevant to growers or crop production
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/growers.jpg", // Replace with an image relevant to growers or crop production
     },
     {
       title: "Supply Chain Management",
       description: "Neural Farms is designed to support the entire agricultural supply chain, from warehousing to distribution.",
-      imgSrc: img5, // Replace with an image related to supply chain management
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/green+house.webp", // Replace with an image related to supply chain management
     },
     {
       title: "Retail and Consumer",
       description: "Neural Farms bridges the gap between growers and end consumers by offering tools for traceability and quality assurance.",
-      imgSrc: img6, // Replace with an image related to retail and consumer
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/reatil_consumer.jpeg", // Replace with an image related to retail and consumer
     }
   ];
   
@@ -124,7 +118,7 @@ const Product3 = () => {
           <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white'>Learn More</p>
         </div>
         <div className='w-[80%] mx-auto py-5'>
-          <img src={img} alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
+          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/Neural_Farms.jpg" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
         </div>
       </div>
 
@@ -163,7 +157,7 @@ const Product3 = () => {
           </h1>
         </div>
       </div>
-      <div className="pb-20 mt-10 bg-white">
+      <div className="pb-20 mt-10 bg-white ">
       <div
         ref={containerRef}
         className="w-full overflow-x-auto scrollbar-hide cursor-grab"

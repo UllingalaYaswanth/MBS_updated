@@ -1,10 +1,4 @@
-import React, { useState } from 'react';
-import image1 from '../../assets/health_mba.png'; 
-import image2 from '../../assets/tele.jpg'; 
-import image3 from '../../assets/logistics.jpg'; 
-import image4 from '../../assets/retail.jpg'; 
-import image5 from '../../assets/real_estate.jpg'; 
-import image6 from '../../assets/manufacture.png'; 
+import React, { useState } from 'react'; 
 import { Menu, X } from 'lucide-react';
 
 const tabData = [
@@ -13,42 +7,42 @@ const tabData = [
         name: 'Telecommunications',
         title: 'Transform telecommunications with innovative digital solutions',
         description: 'Create virtual replicas of physical towers to facilitate effective management. This allows for improved resource allocation and reduced downtime. Real-time monitoring ensures operational efficiency and responsiveness.',
-        imageSrc: image2,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Sectors_Telecommunications.png",
     },
     {
         id: 'tab2',
         name: 'Healthcare',
         title: 'Revolutionize healthcare with data-driven patient support',
         description: 'Enhanced patient care is achieved through advanced technology and predictive analytics. Telemedicine solutions bridge the gap for remote healthcare access, improving patient outcomes and streamlining care delivery.',
-        imageSrc: image1,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Sectors_Healthcare.jpg",
     },
     {
         id: 'tab3',
         name: 'Logistics',
         title: 'Optimize logistics operations for better delivery outcomes',
         description: 'Enhance supply chain efficiency with real-time tracking capabilities, ensuring transparency and accountability throughout the logistics process. Predictive analytics empower decision-making and optimize operations.',
-        imageSrc: image3,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Sectors_Logistics.jpg",
     },
     {
         id: 'tab4',
         name: 'Retail and E-Commerce',
         title: 'Elevate retail strategies through intelligent data use',
         description: 'Utilize AI to extract and analyze data for valuable insights into consumer behavior. Streamlining workflows enhances operational accuracy and speed, significantly boosting sales and customer satisfaction.',
-        imageSrc: image4,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Sectors_E-commerce.jpg",
     },
     {
         id: 'tab5',
         name: 'Real Estate and Construction',
         title: 'Transform real estate with innovative construction solutions',
         description: 'Smart building solutions offer innovative project management capabilities. Market analysis tools provide crucial insights for strategic decision-making, helping clients understand potential investments better.',
-        imageSrc: image5,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Sectors_Construction.jpg",
     },
     {
         id: 'tab6',
         name: 'Manufacturing',
         title: 'Advance manufacturing processes through smart technologies',
         description: 'Boost operational efficiency through predictive maintenance strategies, minimizing unexpected downtimes and optimizing production processes. Supply chain optimization further enhances productivity and reduces costs.',
-        imageSrc: image6,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Sectors_Manufacture.png",
     },
 ];
 

@@ -1,6 +1,5 @@
 
 import { motion } from 'framer-motion';
-import rust1Img from '../../assets/rust.png';
 
 const Rust = () => {
   return (
@@ -9,7 +8,7 @@ const Rust = () => {
         <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-20">
           <motion.img
             id="about-image"
-            src={rust1Img}
+            src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Advance_Defect_Detection.png"
             className="w-full md:w-[95%] rounded order-1 lg:order-1"
             alt="About Image"
             initial={{ scale: 1.5, opacity: 0, x: 150 }} // Initial state (zoomed in and off to the right)

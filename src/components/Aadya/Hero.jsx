@@ -1,9 +1,6 @@
-import { curve, robot } from "../../assets"; // Updated import to use user_page1
 import Section from "./Section";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { ScrollParallax } from "react-just-parallax";
+import { BackgroundCircles, Gradient } from "./design/Hero";
 import { useRef, useState, useEffect } from "react";
-import Notification from "./Notification";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -57,15 +54,7 @@ const Hero = () => {
           Transforming Language
           </span>
           <span className="text-bold"> Intelligence &nbsp;</span>
-            <span className="inline-block relative">
-              <img
-                src={curve}
-                className="absolute top-full left-0 w-full xl:-mt-2"
-                width={624}
-                height={28}
-                alt="Curve"
-              />
-            </span>
+    
           </h1>
           <p className="max-w-3xl text-xl mx-auto mb-6 text-n-2 lg:mb-8 mt-10 text-gray-900">
             Unleash the power of AI with Adhya.
@@ -77,27 +66,19 @@ const Hero = () => {
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
-                  src={robot} // Using the user_page1 image
+                  src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Welcome_page.png" // Using the user_page1 image
                   className="w-full h-full object-cover" // Full width and height, cover the background
                   width={1024}
                   height={490}
                   alt="AI"
                 />
-                {/* <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" /> */}
-                <ScrollParallax isAbsolutelyPositioned>
-                  <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex "
-                    title="ANALYSING"
-                  />
-                </ScrollParallax>
-              </div>
+                </div>
             </div>
             <Gradient />
           </div>
           <BackgroundCircles />
         </div>
       </div>
-      <BottomLine />
     </Section>
   );
 };

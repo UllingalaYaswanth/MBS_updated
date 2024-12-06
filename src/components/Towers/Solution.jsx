@@ -1,12 +1,6 @@
 
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import PM from '../../assets/Predt_Maint.webp'
-import QC from '../../assets/Quality_C.jpg'
-import NLP from '../../assets/NLP.jpg'
-import CV from '../../assets/CV1.webp'
-import DM from '../../assets/3DM.png'
-import DT from '../../assets/DigitalT.jpeg'
 
 const tabData = [
     {
@@ -18,7 +12,7 @@ const tabData = [
                 Real-time data integration enables effective monitoring of assets. This technology supports proactive maintenance strategies, ensuring optimal performance. It ultimately optimizes resource management and enhances decision-making processes.
             </p>
         ),
-        imageSrc: DT,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_Digital_Twin.jpg",
     },
     {
         id: 'tab2',
@@ -29,7 +23,7 @@ const tabData = [
                 Accurate models of structures are created through advanced techniques. This enhances architectural and urban planning by providing precise visualizations. Improved stakeholder engagement is achieved through effective visualization methods.
             </p>
         ),
-        imageSrc: DM,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_3D_Reconstruction.png",
     },
     {
         id: 'tab3',
@@ -40,7 +34,7 @@ const tabData = [
                 This approach forecasts maintenance needs effectively, preventing unexpected breakdowns. By identifying potential issues early, it significantly reduces overall maintenance costs. Enhanced reliability leads to improved asset longevity.
             </p>
         ),
-        imageSrc: PM,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_Predictive_Maintenance.webp",
     },
     {
         id: 'tab4',
@@ -51,7 +45,7 @@ const tabData = [
                 Thorough inspections using digital models ensure adherence to quality standards. This process identifies hazards, enhancing overall safety within operations. Continuous quality assurance fosters a culture of excellence.
             </p>
         ),
-        imageSrc: QC,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_Quality_Control.jpg",
     },
     {
         id: 'tab5',
@@ -62,7 +56,7 @@ const tabData = [
                 NLP simplifies data interaction by allowing users to engage with technology through natural language. This promotes wider technology adoption across various teams. Enhanced collaboration and communication result from this user-friendly approach.
             </p>
         ),
-        imageSrc: NLP,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_NLP.jpg",
     },
     {
         id: 'tab6',
@@ -73,7 +67,7 @@ const tabData = [
                 Computer vision automates inspections to detect structural anomalies efficiently. This streamlines processes and significantly reduces manual effort. Ensuring compliance with safety regulations is a key benefit of this technology.
             </p>
         ),
-        imageSrc: CV,
+        imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_CV.webp",
     },
 ];
 
@@ -136,7 +130,7 @@ const TabSelector = () => {
                             <img 
                               src={imageSrc} 
                               alt={name} 
-                              className={`rounded-md ${imageSrc === DM ? 'w-[250px]' : 'w-full md:w-[600px]'}`} 
+                              className={`rounded-md ${imageSrc === "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Solution_3D_Reconstruction.png" ? 'w-[250px]' : 'w-full md:w-[600px]'}`} 
                             />
 
                         </div>

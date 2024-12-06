@@ -1,14 +1,7 @@
-import img from '../../../hero.webp'
 import Footer from "../../Footer";
 import Navbar from "../../Navbar";
 import React, { useRef, useState,useEffect } from 'react';
 import Sector_Card from '../Sector_Card';
-import img1 from '../../../assets/img/Rectangle 45@2x.png';
-import img3 from '../../../assets/img/Rectangle 45-2@2x.png';
-import img4 from '../../../assets/img/Rectangle 45-3@2x.png';
-import img5 from '../../../assets/img/Rectangle 45-4@2x.png';
-import img6 from '../../../assets/img/Rectangle 45-5@2x.png';
-import img7 from '../../../assets/img/Rectangle 45-6@2x.png';
 import { BarChart, Wrench, Cpu, MapPin, DollarSign } from "lucide-react";  // Importing relevant icons
 
 const Product2 = () => {
@@ -56,37 +49,37 @@ const Product2 = () => {
       title: "Digital Bird’s Eye View",
       // subtitle: "Telecom Infrastructure Digital Twin",
       description: "Provides real-time, 3D visualization of telecom assets, enabling efficient monitoring and decision-making.",
-      imgSrc: img3,
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/Digital+Bird%E2%80%99s+Eye+View.jpeg",
     },
     {
       title: "Geo-referenced Modelling",
       // subtitle: "Intelligence FOD Tracker",
       description: "Accurately locates telecom assets with precise geographic data, ensuring effective tracking and management.",
-      imgSrc: img5,
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/geo-ref.webp",
     },
     {
       title: "Maintenance Tracking",
       // subtitle: "Neural Farms Platform",
       description: "Optimizes maintenance schedules and reduces downtime through proactive tracking of service needs and repairs.",
-      imgSrc: img6,
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/maintenance_tracking.jpeg",
     },
     {
       title: "Digital Inspection Records",
       // subtitle: "Smart City Planning Platform",
       description: "Creates traceable digital records for all inspections and maintenance activities for compliance and auditing.",
-      imgSrc: img1,
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/digital_inspection.jpg",
     },
     {
       title: "Expansion Insights",
       // subtitle: "Revolutionize healthcare with data-driven patient support",
       description: "Uses predictive analytics to guide future infrastructure growth and capacity planning, ensuring sustainable scaling.",
-      imgSrc: img4,
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/expansion_insights.webp",
     },
     {
       title: "Asset Inventory Mapping",
       // subtitle: "Elevate retail strategies through intelligent data use.",
       description: "Centralizes and organizes both physical and digital assets, improving resource allocation and simplifying asset tracking.",
-      imgSrc: img7,
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/asset__inventory.avif",
     }
   ];
 
@@ -145,7 +138,7 @@ const Product2 = () => {
           <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white'>Learn More</p>
         </div>
         <div className='w-[80%] mx-auto py-5'>
-          <img src={img} alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
+          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/Digital_Twin.png" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
         </div>
       </div>
 

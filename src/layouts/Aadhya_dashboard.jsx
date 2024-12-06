@@ -1,5 +1,3 @@
-
-import ButtonGradient from "../assets/svg/ButtonGradient";
 import Benefits from "../components/Aadya/Benefits";
 import Collaboration from "../components/Aadya/Collaboration";
 import Hero from "../components/Aadya/Hero";
@@ -22,7 +20,6 @@ const Aadhya_dashboard = () => {
         <Solutions /> 
         <Roadmap />
       </div>
-      <ButtonGradient />
       <Footer/>
     </div>
   );

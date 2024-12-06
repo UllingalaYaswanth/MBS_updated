@@ -1,5 +1,5 @@
 import { check } from "../../assets";
-import { collabApps, collabContent, collabText } from "../../constants";
+import { collabApps, collabContent } from "../../constants";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 

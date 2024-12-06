@@ -1,7 +1,6 @@
 import { useGSAP } from '@gsap/react';
 import React, { useRef } from 'react';
 import { animateWithGsap } from '../../utils/animations';
-import { explore1Img, explore2Img,} from '../../utils';
 import gsap from 'gsap';
 const Features = () => {
   const videoRef = useRef();
@@ -47,14 +46,14 @@ const Features = () => {
              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                {/* Image 1 */}
                <div className="relative h-[50vh] rounded overflow-hidden group">
-                    <img src={explore1Img} alt="Titanium Feature" className="w-full h-full" />
+                    <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Vision_Cutting_edge.jpg" alt="Titanium Feature" className="w-full h-full" />
                  <h1 className="text-xl text-white absolute top-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                    Cutting-Edge Technology
                   </h1>
                 </div>
                {/* Image 2 */}
                <div className="relative h-[50vh] rounded overflow-hidden group">
-                 <img src={explore2Img} alt="Titanium Feature 2" className="w-full h-full object-cover" />
+                 <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Vision_Innovation.jpg" alt="Titanium Feature 2" className="w-full h-full object-cover" />
                  <h1 className="text-xl text-white absolute top-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                    Innovation in Every Pixel
                  </h1>

@@ -2,17 +2,11 @@
 
 import React, { useState } from 'react';
 import {Truck, Menu, X } from 'lucide-react';
-import image1 from '../../assets/health_mba.png'; 
-import image4 from '../../assets/retail.jpg'; 
-import image6 from '../../assets/manufacture.png'; 
-import image2 from '../../assets/CV_A.jpg'; 
-import image3 from '../../assets/CV_C.png'; 
-import image5 from '../../assets/CV_AM.jpg'; 
 
 
 export const feature = [
   {
-    imageSrc: image1,
+    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Solutions_Health_Care.png",
     text: "Healthcare",
     title: "Automated Patient Monitoring",
     description: (
@@ -22,7 +16,7 @@ export const feature = [
     ),
   },
   {
-    imageSrc: image4,
+    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Solutions_E-commerce.jpg",
     text: "E-commerce",
     title: "Interactive Shopping Experience",
     description: (
@@ -32,7 +26,7 @@ export const feature = [
     ),
   },
   {
-    imageSrc: image5,
+    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Solutions_Automotive.jpg",
     text: "Automotive",
     title: "Advanced Driver Assistance",
     description: (
@@ -42,7 +36,7 @@ export const feature = [
     ),
   },
   {
-    imageSrc: image6,
+    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Solutions_Manufacture.png",
     text: "Manufacturing",
     title: "Quality Control Solutions",
     description: (
@@ -52,7 +46,7 @@ export const feature = [
     ),
   },
   {
-    imageSrc: image2,
+    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Solutions_Agriculture.jpg",
     text: "Agriculture",
     title: "Smart Farming Techniques",
     description: (
@@ -62,7 +56,7 @@ export const feature = [
     ),
   },
   {
-    imageSrc: image3 ,
+    imageSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Solutions_Security.png" ,
     text: "Security",
     title: "Enhanced Safety Solutions",
     description: (

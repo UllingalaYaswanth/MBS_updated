@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import video2 from '../../assets/image_1.png';
 import Popup from './Popup';
 
 function Projects() {
@@ -256,9 +255,9 @@ function Projects() {
             <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>Learn More..</span>
           </p>
         </div>
-        <img src={video2} className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
+        <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Project_City_Planning.png" className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
       </div>
-      <Popup isOpen={isOpen.project2} onClose={() => togglePopup('project2')} videoSrc={video2} title="Project Overview: City Planning" content={projectContent.project2} />
+      <Popup isOpen={isOpen.project2} onClose={() => togglePopup('project2')} videoSrc="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Project_City_Planning.png" title="Project Overview: City Planning" content={projectContent.project2} />
 
       {/* Project 3 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>

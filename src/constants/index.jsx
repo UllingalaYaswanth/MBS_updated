@@ -296,50 +296,18 @@ export const checklistItems = [
 ];
 
 import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
   chromecast,
   disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
   file02,
-  framer,
   homeSmile,
-  instagram,
-  notification2,
-  notification3,
-  notification4,
-  notion,
-  photoshop,
   plusSquare,
-  protopie,
-  raindrop,
   recording01,
   recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
   searchMd,
-  slack,
   sliders04,
-  telegram,
-  twitter,
   yourlogo,
  
 } from "../assets";
-
-import cc from '../assets/images/cc.png'
-import Di from '../assets/images/Di.png'
-import Kn from '../assets/images/Kn.png'
-import QS from '../assets/images/QS.png'
-import RS from '../assets/images/RS.png'
-import sm from '../assets/images/sm.png'
 
 export const navigation = [
   {
@@ -378,8 +346,6 @@ export const navigation = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
-export const notificationImages = [notification4, notification3, notification2];
-
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
@@ -401,26 +367,22 @@ export const roadmap = [
     id: "0",
     title: "Tailored Intelligence",
     text: "Custom Tailored Intelligent chatbot for efficiency. ",
-    imageUrl: roadmap1,
     
   },
   {
     id: "1",
     title: "Usage Analytics",
     text: "Get intelligent insights from local documents.",
-    imageUrl: roadmap2,
   },
   {
     id: "2",
     title: "Security",
     text: "Establish tiered security protocols for document levels.",
-    imageUrl: roadmap3,
   },
   {
     id: "3",
     title: "Sources",
     text: "A completely redesigned experience to keep you in flow.",
-    imageUrl: roadmap4,
   },
 ];
 
@@ -447,56 +409,56 @@ export const collabApps = [
   {
     id: "0",
     title: "Figma",
-    icon: figma,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/figma.png",
     width: 26,
     height: 36,
   },
   {
     id: "1",
     title: "Notion",
-    icon: notion,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/notion.png",
     width: 34,
     height: 36,
   },
   {
     id: "2",
     title: "Discord",
-    icon: discord,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/discord.png",
     width: 36,
     height: 28,
   },
   {
     id: "3",
     title: "Slack",
-    icon: slack,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/slack.png",
     width: 34,
     height: 35,
   },
   {
     id: "4",
     title: "Photoshop",
-    icon: photoshop,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/photoshop.png",
     width: 34,
     height: 34,
   },
   {
     id: "5",
     title: "Protopie",
-    icon: protopie,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/protopie.png",
     width: 34,
     height: 34,
   },
   {
     id: "6",
     title: "Framer",
-    icon: framer,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/framer.png",
     width: 26,
     height: 34,
   },
   {
     id: "7",
     title: "Raindrop",
-    icon: raindrop,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/collaboration/raindrop.png",
     width: 38,
     height: 32,
   },
@@ -543,100 +505,63 @@ export const benefits = [
     id: "0",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+
+
+
   },
   {
     id: "1",
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+
     light: true,
   },
   {
     id: "2",
     title: "Connect everywhere",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
   },
 ]
 
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
-];
 
 export const solutions = [
   {
-    icon: sm,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Usecases_SmartChat_ai.png",
     text: "SmartChat AI",
     description: [
       "Intelligent chatbots and virtual assistants designed for real-time customer engagement and internal support.These solutions streamline communication processes, reduce response times, and enhance stakeholder satisfaction, allowing executives to focus on strategic initiatives."
     ]
   },
   {
-    icon: QS ,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Usecases_QuickSummarize.png" ,
     text: "QuickSummarize",
     description: [
       "Automated summarization of lengthy reports, financial documents, and board meeting notes.This solution enables busy executives and company secretaries to quickly extract critical insights, facilitating informed decision-making and efficient meetings."
     ]
   },
   {
-    icon: Kn ,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Usecases_Knowledge_Navigator.png" ,
     text: "Knowledge Navigator",
     description: [
       "A dynamic knowledge management platform that consolidates and synthesizes information from various business sources.This tool enhances organizational efficiency by ensuring that decision-makers have easy access to the information they need when they need it."
     ]
   },
   {
-    icon: cc,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Usecases_Knowledge_Navigator.png",
     text: "Content Creator Pro",
     description: [
       "AI-driven content generation tools that produce high-quality, tailored communications for executive briefings, investor relations, and corporate marketing.This solution ensures consistent messaging that aligns with the company's strategic objectives."
     ]
   },
   {
-    icon: Di ,
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Usecases_Knowledge_Navigator.png" ,
     text: "Document Intelligence Suite",
     description: [
       "An automated system for extracting and analyzing key data from legal and financial documents.Designed for company secretaries and compliance officers, this suite helps ensure regulatory compliance and improves data accuracy while saving valuable time."
     ]
   },
   {
-    icon: RS, // Reuse the icon for Vendor Risk Assessment Tool
+    icon: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Usecases_RS.png", // Reuse the icon for Vendor Risk Assessment Tool
     text: "Vendor Risk Assessment Tool",
     description: [
       "A comprehensive solution that evaluates supplier risks by analyzing contracts and compliance documents.This tool empowers CFOs and procurement teams to make informed sourcing decisions, ensuring the reliability and integrity of supply chains."

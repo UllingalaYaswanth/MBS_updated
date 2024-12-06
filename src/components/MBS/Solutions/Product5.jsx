@@ -1,14 +1,7 @@
-import img from '../../../assets/9lvoom5iii.png'
 import Footer from "../../Footer";
 import Navbar from "../../Navbar";
 import React, { useRef, useState,useEffect } from 'react';
 import Sector_Card from '../Sector_Card';
-import img1 from '../../../assets/img/Rectangle 45@2x.png';
-import img3 from '../../../assets/img/Rectangle 45-2@2x.png';
-import img4 from '../../../assets/img/Rectangle 45-3@2x.png';
-import img5 from '../../../assets/img/Rectangle 45-4@2x.png';
-import img6 from '../../../assets/img/Rectangle 45-5@2x.png';
-import img7 from '../../../assets/img/Rectangle 45-6@2x.png';
 import { Zap, BarChart2, MessageCircle, DollarSign, RefreshCcw     } from "lucide-react";  // Importing relevant icons
 
 const Product5 = () => {
@@ -52,30 +45,20 @@ const Product5 = () => {
   ];
   const sectors = [
     {
-      title: "Automated FOD Detection and Classification",
-      description: "Uses AI to automatically identify and classify debris, enhancing detection accuracy and minimizing human error.",
-      imgSrc: img3, // Replace with an image relevant to FOD detection
+      title: "Project Management",
+      description: "Supports project planning, resource allocation, task tracking, and efficient execution.",
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/aadhya/Project+Management.png", // Replace with an image relevant to FOD detection
     },
     {
-      title: "Instant Alerts with Precise Location Tracking",
-      description: "Sends real-time alerts with exact location details, enabling rapid response to potential hazards.",
-      imgSrc: img5, // Replace with an image related to alerts or tracking
+      title: "Human Resources",
+      description: " Automates recruitment, training,performance evaluation, workforce optimization.",
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/aadhya/Human+Resources.png", // Replace with an image related to alerts or tracking
     },
     {
-      title: "Visual Monitoring and Dashboards",
-      description: "Provides a centralized dashboard to track FOD location, type, and clearance status for management.",
-      imgSrc: img6, // Replace with an image related to dashboards or visual monitoring
+      title: " Logistics",
+      description: " Streamlines supply chain operations, inventory management, order fulfillment, and transportation logistics.",
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/aadhya/Logistics.png", // Replace with an image related to dashboards or visual monitoring
     },
-    {
-      title: "Clearance Status Tracking",
-      description: "Monitors debris from detection through to removal, ensuring safe, debris-free zones.",
-      imgSrc: img7, // Replace with an image related to clearance tracking
-    },
-    {
-      title: "Digital Event Recording",
-      description: "Automatically logs all FOD incidents, supporting compliance, safety audits, and preventive analysis.",
-      imgSrc: img1, // Replace with an image related to digital event recording or logs
-    }
   ];
 
   // Ref for the container element to track mouse position and scrolling
@@ -135,7 +118,7 @@ const Product5 = () => {
           <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white'>Learn More</p>
         </div>
         <div className='w-[80%] mx-auto py-5'>
-          <img src={img} alt="bg" className="w-[80%] mx-auto rounded-lg object-cover border-2" />
+          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/aadhya/AADHYA.png" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover border-2" />
         </div>
       </div>
 

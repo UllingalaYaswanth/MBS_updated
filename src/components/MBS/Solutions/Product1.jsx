@@ -1,14 +1,7 @@
-import img from '../../../assets/p1.png'
 import Footer from "../../Footer";
 import Navbar from "../../Navbar";
 import React, { useRef, useState,useEffect } from 'react';
 import Sector_Card from '../Sector_Card';
-import img1 from '../../../assets/img/Rectangle 45@2x.png';
-import img3 from '../../../assets/img/Rectangle 45-2@2x.png';
-import img4 from '../../../assets/img/Rectangle 45-3@2x.png';
-import img5 from '../../../assets/img/Rectangle 45-4@2x.png';
-import img6 from '../../../assets/img/Rectangle 45-5@2x.png';
-import img7 from '../../../assets/img/Rectangle 45-6@2x.png';
 import { FaChartBar, FaCog, FaClock, FaEye, FaHeart } from 'react-icons/fa'; // Corrected imports
 
 const Product1 = () => {
@@ -57,32 +50,27 @@ const features = [
     {
       title: "Interactive 3D City Models for Urban Planning",
       description: "Visualize and simulate city layouts and changes with real-time, 3D models to enhance planning accuracy and decision-making.",
-      imgSrc: img3,  // You can replace this with the appropriate image source
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/city_planning.png",  // You can replace this with the appropriate image source
     },
     {
       title: "Real-Time Environmental Monitoring",
       description: "Track key environmental metrics, ensuring cities meet sustainability goals while protecting public health and safety.",
-      imgSrc: img5,  // You can replace this with the appropriate image source
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/real-time_env.jpg",  // You can replace this with the appropriate image source
     },
     {
       title: "Advanced Terrain Analysis and Simulation",
       description: "Digital twin-based terrain analysis provides real-time, accurate simulations, enhancing decision-making with dynamic spatial data and predictive insights.",
-      imgSrc: img6,  // You can replace this with the appropriate image source
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/Analysis+and+Simulation.png",  // You can replace this with the appropriate image source
     },
     {
       title: "Traffic Optimization for Better Mobility",
       description: "Use predictive analytics and real-time data to manage traffic flow, reduce congestion, and improve transportation systems.",
-      imgSrc: img1,  // You can replace this with the appropriate image source
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/traffic_op1.PNG",  // You can replace this with the appropriate image source
     },
     {
       title: "Optimizing Resource Use for Sustainable City Management",
       description: "Ensure efficient allocation and consumption of essential resources such as water, energy, and waste management through real-time monitoring.",
-      imgSrc: img4,  // You can replace this with the appropriate image source
-    },
-    {
-      title: "Digital Bird’s Eye View for Telecom Assets",
-      description: "Provides real-time, 3D visualization of telecom assets, enabling efficient monitoring and decision-making for telecom infrastructure.",
-      imgSrc: img7,  // You can replace this with the appropriate image source
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/sustainable_city.jpg",  // You can replace this with the appropriate image source
     }
   ];
   
@@ -140,10 +128,10 @@ const features = [
           <h1 className="text-8xl font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text py-10">Smart City Planning Platform
           </h1>
           <p className=' text-3xl text-center'>Intelligent Urban Planning for Sustainable and Adaptive Growth</p>
-          <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white'>Learn More</p>
+          <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white cursor-pointer'>Learn More</p>
         </div>
         <div className='w-[80%] mx-auto py-5'>
-          <img src={img} alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
+          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/smart_city.png" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
         </div>
       </div>
 
