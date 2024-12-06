@@ -2,6 +2,7 @@ import Footer from "../../Footer";
 import Navbar from "../../Navbar";
 import React, { useRef, useState,useEffect } from 'react';
 import Sector_Card from '../Sector_Card';
+import nf from "../sprayer_drone500.webp"
 
 import { Monitor, Database, Crop, Truck, TrendingUp } from "lucide-react";  // Importing relevant icons
 
@@ -48,7 +49,7 @@ const Product3 = () => {
     {
       title: "Growers",
       description: "Neural Farms provides powerful tools and insights specifically designed for growers to optimize every stage of crop production.",
-      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/growers.jpg", // Replace with an image relevant to growers or crop production
+      imgSrc: nf, // Replace with an image relevant to growers or crop production
     },
     {
       title: "Supply Chain Management",
