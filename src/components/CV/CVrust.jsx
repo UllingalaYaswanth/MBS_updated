@@ -5,7 +5,7 @@ const Rust = () => {
   return (
     <section className="w-full relative">
       <div className="h-5/6 w-[80%] mx-auto flex flex-col">
-        <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-20">
+        <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-10 lg:py-20">
           <motion.img
             id="about-image"
             src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Advance_Defect_Detection.png"

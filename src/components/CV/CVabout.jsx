@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="w-full relative">
       <div className="h-5/6 w-full mx-auto flex flex-col ">
-        <div className="md:w-10/12 w-11/12 mx-auto grid lg:grid-cols-2 items-center md:items-center gap-4 py-10 space-y-10 md:space-y-0">
+        <div className="md:w-10/12 w-11/12 mx-auto grid lg:grid-cols-2 items-center md:items-center gap-4 py-10">
           <motion.div
             className="flex flex-col justify-center order-1 md:order-0"
             initial={{ x: -100, opacity: 0 }}

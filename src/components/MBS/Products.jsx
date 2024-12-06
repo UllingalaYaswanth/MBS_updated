@@ -3,7 +3,6 @@ import React, { useRef } from 'react';
 import { animateWithGsap } from '../../utils/animations';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';  // Import Link for navigation
-import img from './towercapture.png'
 
 const Products = () => {
   const videoRef = useRef();
@@ -28,7 +27,7 @@ const Products = () => {
     <section className="bg-zinc-800 relative overflow-hidden py-16 w-full">
       <div className="px-6">
         <div className="text-center mb-12 ">
-        <h1 className="text-3xl sm:text-5xl lg:text-7xl tracking-wide">
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl tracking-wide lg:py-10">
           <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text font-semibold">
               Our Solutions
           </span>
@@ -47,7 +46,7 @@ const Products = () => {
 
             {/* Product 2 */}
             <Link target="blank" to="/product2" className="relative h-[50vh] rounded overflow-hidden group hover:scale-105 duration-500">
-              <img src={img} alt="Titanium Feature 2" className="w-full h-full object-cover" />
+              <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Solution_Telecom_Tower_Reconstruction.png" alt="Titanium Feature 2" className="w-full h-full object-cover" />
               <h1 className="text-xl text-white absolute bottom-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               Telecom Tower Reconstruction
               </h1>
@@ -61,13 +60,13 @@ const Products = () => {
               </h1>
             </Link>
             <Link target="blank" to="/product4" className="relative h-[50vh] rounded overflow-hidden group hover:scale-105 duration-500">
-              <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Solutions_FOD.jpg" alt="Titanium Feature 2" className="w-full h-full object-cover" />
+              <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Solutions_FOD.jpg" alt="Titanium Feature 2" className="w-full h-full lg:object-cover" />
               <h1 className="text-xl text-white absolute bottom-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               Intelligence FOD Tracker
               </h1>
             </Link>
             <Link target="blank" to="/product5" className="relative h-[50vh] rounded overflow-hidden group hover:scale-105 duration-500 border-2">
-              <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Solutions_Aadhya.png" alt="Titanium Feature 2" className="w-full h-full object-cover" />
+              <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/Solutions_Aadhya.png" alt="Titanium Feature 2" className="w-full h-full lg:object-cover" />
               <h1 className="text-xl text-white absolute bottom-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               AADHYA - AI-powered Organizational GPT
               </h1>

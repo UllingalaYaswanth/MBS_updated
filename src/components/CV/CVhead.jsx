@@ -5,14 +5,14 @@ const Head = () => {
     <section className="w-full relative">
       <div className="h-5/6 w-[80%] mx-auto flex-center flex-col">
       <div className="text-center">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
           Our {" "}
           <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
             Projects
           </span>
           </h2>
       </div>
-        <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-20">
+        <div className="w-full grid lg:grid-cols-2 items-center justify-start gap-4 py-10 lg:py-20">
           <motion.video
             id="about-image"
             src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/CV_Disaster_Response.mp4"

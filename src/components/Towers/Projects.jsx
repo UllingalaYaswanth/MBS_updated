@@ -51,7 +51,7 @@ function Projects() {
   const projectContent = {
     project1: (
       <>
-        <section className="mb-6 max-h-[580px] overflow-y-scroll ">
+        <section className="mb-6 h-[470px] lg:max-h-[580px] overflow-y-scroll ">
         <div className=" max-w-3xl">
                 <h1 className=" text-xl md:text-2xl lg:text-3xl font-semibold mb-4">Project Overview: 10,000 Tower Reconstruction</h1>
 
@@ -97,10 +97,10 @@ function Projects() {
     ),
     project2: (
       <>
-        <section className="mb-6 max-h-[580px] overflow-y-scroll ">
+        <section className="mb-6 h-[470px] lg:max-h-[580px] overflow-y-scroll ">
         <div className="p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Innovative Urban Planning Solutions</h1>
-      <p className="text-lg text-center mb-8">
+      <h1 className="text-3xl font-bold text-left mb-6">Innovative Urban Planning Solutions</h1>
+      <p className="text-lg text-left mb-8">
         We specialize in sustainable city designs, leveraging digital twins of urban environments to help municipalities make informed decisions.
       </p>
 
@@ -134,8 +134,8 @@ function Projects() {
     ),
     project3: (
       <>
-        <section className="mb-6 max-h-[700px] overflow-y-scroll">
-        <div className="min-h-screen p-8">
+        <section className="mb-6 h-[470px] lg:max-h-[580px] overflow-y-scroll">
+        <div className="min-h-screen">
       <div className="max-w-4xl mx-auto  rounded-lg p-6">
         {/* Introduction Section */}
         <section className="mb-8">
@@ -182,8 +182,8 @@ function Projects() {
     ),
     project4: (
       <>
-        <section className="mb-6 max-h-[700px] overflow-y-scroll ">
-        <div className="min-h-screen  py-10">
+        <section className="mb-6 h-[470px] lg:max-h-[580px] overflow-y-scroll ">
+        <div className="min-h-screen py-10">
       <div className="max-w-4xl mx-auto px-6 shadow-md rounded-lg p-8">
         <h1 className="text-3xl font-bold text-center mb-6 ">
           Railway Bridge Digital Twin Inspection - Kerala
@@ -237,10 +237,10 @@ function Projects() {
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>
         <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Tower_Reconstruction.mp4" autoPlay muted loop className='md:w-[500px] rounded-md' />
         <div className='flex justify-center flex-col'>
-          <h1 className='mb-2 text-xl sm:text-3xl lg:text-4xl'>Tower Reconstruction</h1>
+          <h1 className='mb-2 text-2xl md:text-3xl lg:text-4xl'>Tower Reconstruction</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">We undertook the monumental task of reconstructing 10,000 towers, leveraging our 3D reconstruction and digital twin technologies to ensure structural integrity and compliance with modern standards. This project not only enhanced our portfolio but also established our credibility in the industry, landing us numerous contracts in city planning.</p>
           <p className="mt-2" onClick={() => togglePopup('project1')}>
-            <span className="border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">Learn More..</span>
+            <span className="border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text text-lg">Learn More..</span>
           </p>
         </div>
       </div>
@@ -249,10 +249,10 @@ function Projects() {
       {/* Project 2 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 lg:space-y-0 items-center'>
         <div className='flex justify-center flex-col order-1 md:order-0 mt-10 lg:mt-0'>
-          <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>City Planning</h1>
+          <h1 className='text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-2'>City Planning</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">Our innovative approaches to urban planning have earned us contracts with multiple municipalities, allowing us to contribute to sustainable and efficient city designs. By creating detailed digital twins of urban environments, we assist planners in making informed decisions that impact communities positively.</p>
           <p className='mt-2' onClick={() => togglePopup('project2')}>
-            <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>Learn More..</span>
+            <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text text-lg'>Learn More..</span>
           </p>
         </div>
         <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/Project_City_Planning.png" className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />
@@ -263,10 +263,10 @@ function Projects() {
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 space-y-10 lg:space-y-0 items-center'>
         <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Critical_Inspections.mp4" autoPlay muted loop className='w-full md:w-[500px] rounded-md' />
         <div className='flex justify-center flex-col'>
-          <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>Critical Inspections</h1>
+          <h1 className='text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-2'>Critical Inspections</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">We have performed comprehensive inspections of critical dam infrastructure using our digital twin technology. Our solutions enable real-time monitoring of structural health, ensuring safety and compliance with regulatory standards.</p>
           <p className='mt-2' onClick={() => togglePopup('project3')}>
-            <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>Learn More..</span>
+            <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text text-lg'>Learn More..</span>
           </p>
         </div>
       </div>
@@ -275,10 +275,10 @@ function Projects() {
       {/* Project 4 */}
       <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 border-b border-neutral-700 px-10 lg:space-y-0 items-center'>
         <div className='flex justify-center flex-col order-1 md:order-0 mt-10 lg:mt-0'>
-          <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>Railway Bridge Inspections</h1>
+          <h1 className='text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-2'>Railway Bridge Inspections</h1>
           <p className="text-md md:text-lg mt-3 text-neutral-500">Our computer vision and automated inspection techniques have been employed for thorough assessments of railway bridges, identifying potential structural issues and ensuring safe operations.</p>
           <p className='mt-2' onClick={() => togglePopup('project4')}>
-            <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>Learn More..</span>
+            <span className='border-b border-transparent hover:border-black cursor-pointer bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text text-lg'>Learn More..</span>
           </p>
         </div>
         <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Railway_Bridge_Inspections.mp4" autoPlay muted loop className='w-full md:w-[500px] order-0 lg:order-1 rounded-md' />

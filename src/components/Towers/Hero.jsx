@@ -28,9 +28,9 @@ const Hero = () => {
 
   return (
   
-<section className="w-full nav-height relative bg-black">
+<section className="w-full h-[200px] md:h-[400px] lg:nav-height relative">
   <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
+    className="absolute top-0 left-0 w-full lg:h-full object-cover"
     src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/DT_Herobg.mp4"
     autoPlay
     loop

@@ -11,7 +11,7 @@ function Sector_Card({ title, subtitle, description, imageSrc }) {
         }}
       ></p>
       <h2
-        className="text-2xl text-gray-800 font-semibold "
+        className="text-xl lg:text-2xl text-gray-800 font-semibold "
       >
         {title}
       </h2>

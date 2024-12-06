@@ -20,7 +20,7 @@ const MBS = () => {
         <div id="solutions" className="py-5 pt-5">
         <Products/>
         </div>
-      <div id="products" className=" pt-5" >
+      <div id="products" className="pt-5" >
           <CaseStudy />
       </div>
       <div id="footer" className="">

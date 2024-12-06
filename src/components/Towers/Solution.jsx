@@ -80,9 +80,9 @@ const TabSelector = () => {
     };
 
     return (
-        <div className="px-20 p-5">
+        <div className="px-10 lg:px-20 p-5">
             <header className="text-center mb-20">
-                <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
                     Our {" "}<span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
                     SOLUTIONS
                     </span>
@@ -105,7 +105,7 @@ const TabSelector = () => {
                 {tabData.map(({ id, name }) => (
                     <button
                         key={id}
-                        className={`px-4 py-2 text-[1.3rem] border-none rounded-md ${activeTab === id ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
+                        className={`px-4 py-2 text-left sm:text-[1.0rem] lg:text-[1.3rem] border-none rounded-md ${activeTab === id ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
                         onClick={() => {
                             setActiveTab(id);
                             if (isNavOpen) handleToggleNav();

@@ -14,17 +14,17 @@ const CV_dashboard = () => {
         <div id="home">
           <CV />
         </div>
-        <div id="about" className="py-10">
+        <div id="about" className="lg:py-10">
           <Head />
         </div>
-        <div  className="py-10">
+        <div  className="lg:py-10">
           <About />
         </div>
-        <div id="rust" className="py-10">
+        <div id="rust" className="lg:py-10">
           <Rust />
         </div>
         <div className="pt-10 px-6">
-        <div id="feature" className="py-20">
+        <div id="feature" className="lg:py-20">
           <Feature />
         </div>
         <div id="features" className="py-20">

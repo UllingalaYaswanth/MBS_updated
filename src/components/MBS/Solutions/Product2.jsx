@@ -132,12 +132,12 @@ const Product2 = () => {
     <div className="relative border-neutral-800 min-h-[600px] bg-white text-black">
       <Navbar />
       <div className='bg-white'>
-        <div className="h-[700px] flex flex-col justify-center items-center text-black">
-          <h1 className="text-8xl font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">Telecom Tower Reconstruction</h1>
-          <p className='mt-10 text-3xl text-center'>Provides a real-time, 3D visualization of telecom assets, enabling clear monitoring and better decision-making.</p>
-          <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white'>Learn More</p>
+        <div className="h-[400px] md:h-[500px] lg:h-[600px] flex flex-col justify-center items-center text-black px-3">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl text-center font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text py-10">Telecom Tower Reconstruction</h1>
+          <p className='text-lg md:text-xl lg:text-3xl text-center'>Provides a real-time, 3D visualization of telecom assets, enabling clear monitoring and better decision-making.</p>
+        
         </div>
-        <div className='w-[80%] mx-auto py-5'>
+        <div className='lg:w-[80%] mx-auto py-5'>
           <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/telecom_tower/Digital_Twin.png" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
         </div>
       </div>
@@ -149,7 +149,7 @@ const Product2 = () => {
         </span>
 
       </div>
-      <div className="grid md:grid-cols-3 gap-10 mt-10 lg:mt-20 pb-10">
+      <div className="grid md:grid-cols-3 gap-10 mt-10 lg:mt-20 pb-10 px-2">
         {features.map((feature, index) => (
           <div key={index} className="w-full">
             <div className="flex">
@@ -169,19 +169,19 @@ const Product2 = () => {
 
       <div className="text-center ">
         <div className='py-5 mt-10'>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl tracking-wide">
+          <h1 className="text-4xl lg:text-6xl tracking-wide">
             <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
               Predictive AI Applications
             </span>
           </h1>
         </div>
       </div>
-      <div className="pb-20 mt-10 bg-white">
+      <div className="pb-20 lg:mt-10 bg-white">
       <div
         ref={containerRef}
         className="w-full overflow-x-auto scrollbar-hide cursor-grab"
       >
-        <div className="flex space-x-16 w-max px-24">
+        <div className="flex space-x-16 w-max px-5 lg:px-24">
           {sectors.map((sector, index) => (
             <Sector_Card
               key={index}

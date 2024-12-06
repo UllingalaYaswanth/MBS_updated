@@ -56,10 +56,10 @@ const TabSelector = () => {
 
     return (
         <div className="mx-auto p-5">
-            <div className='relative py-5 flex justify-center '>
+            <div className='relative py-5 flex justify-center lg:pb-14'>
             <video src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/videos/Main_Industry_Sectors.mp4" autoPlay muted loop/>
-            <header className="text-center mb-20 absolute top-20">
-                <h2 className="text-3xl sm:text-5xl lg:text-7xl mt-10 lg:mt-20 tracking-wide mb-3 text-white">
+            <header className="text-center mb-20 absolute top-0 md:top-14 lg:top-20">
+                <h2 className="text-3xl md:text-5xl lg:text-7xl mt-10 lg:mt-20 tracking-wide mb-3 text-white">
                     Technologies Transforming {" "}
                 </h2>
                 <h1 className="text-3xl sm:text-5xl lg:text-7xl tracking-wide">
@@ -71,18 +71,18 @@ const TabSelector = () => {
             </div>
             <div className="flex justify-end lg:hidden mb-5">
                 <button 
-                    className="px-4 py-2 text-lg font-semibold border-none rounded-md bg-orange-600 text-white"
+                    className="px-3 py-2 lg:px-4 lg:py-2 text-md lg:text-lg font-semibold border-none rounded-md bg-orange-600 text-white"
                     onClick={handleToggleNav}
                 >
                     {isNavOpen ? <X /> : <Menu />}
                 </button>
             </div>
 
-            <nav className={`flex justify-between ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex`}>
+            <nav className={`flex justify-between ${isNavOpen ? 'flex-col' : 'hidden'} lg:flex `}>
                 {tabData.map(({ id, name }) => (
                     <button
                         key={id}
-                        className={`px-4 py-3 text-[1.3rem] border-none rounded-md ${activeTab === id ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
+                        className={`px-4 py-3 text-left sm:text-[1.1rem] lg:text-[1.3rem] border-none rounded-md ${activeTab === id ? 'bg-orange-600 text-white' : ''} lg:mb-2 lg:mb-0 lg:mr-2`}
                         onClick={() => {
                             setActiveTab(id);
                             if (isNavOpen) handleToggleNav();
@@ -92,12 +92,12 @@ const TabSelector = () => {
                     </button>
                 ))}
             </nav>
-            <div>
+            <div className='lg:pb-8'>
                 {tabData.map(({ id, title, description, imageSrc }) => (
                     <div key={id} className={`p-4 mt-2 border-t border-neutral-600 ${activeTab === id ? 'block' : 'hidden'}`}>
-                        <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 space-y-10 lg:space-y-0 items-center'>
+                        <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10  space-y-10 lg:space-y-0 items-center'>
                             <div className='flex justify-center flex-col'>
-                                <h1 className='text-xl py-5 sm:text-3xl lg:text-5xl text-blue-600 mb-2 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>
+                                <h1 className='text-2xl py-5 sm:text-3xl md:text-4xl lg:text-5xl text-blue-600 mb-2 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>
                                     {title}
                                 </h1>
                                 <p className="text-md md:text-2xl mt-3 text-neutral-500">

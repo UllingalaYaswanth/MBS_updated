@@ -76,9 +76,9 @@ const Feature = () => {
     };
 
     return (
-        <div className="mx-auto p-5 px-10">
+        <div className="mx-auto p-5 md:px-10">
             <header className="text-center mb-20">
-                <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide mb-3">
                     Our {" "}
                     <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
                         SOLUTIONS
@@ -99,7 +99,7 @@ const Feature = () => {
                 {feature.map(({ text }, index) => (
                     <button
                         key={index}
-                        className={`px-4 py-2 text-[1.25rem] border-none rounded-md ${activeTab === `tab${index + 1}` ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
+                        className={`px-4 py-2 text-left text-[1.1rem] lg:text-[1.25rem] border-none rounded-md ${activeTab === `tab${index + 1}` ? 'bg-orange-600 text-white' : ''} mb-2 lg:mb-0 lg:mr-2`}
                         onClick={() => {
                             setActiveTab(`tab${index + 1}`);
                             if (isNavOpen) handleToggleNav();
@@ -114,7 +114,7 @@ const Feature = () => {
                     <div key={index} className={`p-4 mt-2 border-t border-neutral-600 ${activeTab === `tab${index + 1}` ? 'block' : 'hidden'}`}>
                         <div className='flex flex-col lg:flex-row space-x-0 md:space-x-10 py-14 space-y-10 lg:space-y-0 items-center'>
                             <div className='flex justify-center flex-col'>
-                                <h1 className='text-xl sm:text-3xl lg:text-4xl text-blue-600 mb-2'>
+                                <h1 className='text-2xl md:text-3xl lg:text-4xl text-blue-600 mb-2'>
                                     {title}
                                 </h1>
                                 <div className="text-md md:text-lg mt-3 text-neutral-500">

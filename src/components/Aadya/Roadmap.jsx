@@ -5,14 +5,14 @@ import { grid, } from "../../assets";
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
         <div className="text-center">
-          <h2 className="h2 mb-4 md:mb-8">
+          <h2 className="text-4xl lg:text-5xl mb-10 md:mb-20">
           Explore{" "}
             <span className=" bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
             Our Features
             </span>
           </h2>
             </div>
-    <div className="px-40 md:pb-10">
+    <div className=" px-5 lg:px-40 md:pb-10">
       
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">

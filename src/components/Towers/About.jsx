@@ -16,7 +16,7 @@ const Rust = () => {
           <motion.img
             id="about-image"
             src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Digital_Twin/About.png"
-            className="w-[40%] lg:w-[55%] rounded order-1 lg:order-1 ml-40"
+            className="w-[40%] lg:w-[55%] rounded order-1 lg:order-1 ml-24 md:ml-40"
             alt="About Image"
             initial={{ scale: 1.5, opacity: 0, x: 150 }}
             whileInView={{ scale: 1, opacity: 1, x: 0 }}
@@ -30,7 +30,7 @@ const Rust = () => {
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.9, ease: 'easeOut' }}
             >
-              <span className='text-xl md:text-3xl lg:text-5xl font-semibold'>
+              <span className='text-2xl md:text-3xl lg:text-5xl font-semibold'>
                 What is a <span className='bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text'>Digital Twin</span>
               </span>
             </motion.h1>

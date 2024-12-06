@@ -121,36 +121,36 @@ const features = [
 
   
   return (
-    <div className="relative border-neutral-800 min-h-[600px] bg-white text-black">
+    <div className="relative border-neutral-800 bg-white text-black">
       <Navbar />
       <div className='bg-white'>
-        <div className="h-[700px] flex flex-col justify-center items-center text-black">
-          <h1 className="text-8xl font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text py-10">Smart City Planning Platform
+        <div className="h-[400px] md:h-[500px] lg:h-[600px] flex flex-col justify-center items-center text-black px-3">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl text-center font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text py-10">Smart City Planning Platform
           </h1>
-          <p className=' text-3xl text-center'>Intelligent Urban Planning for Sustainable and Adaptive Growth</p>
-          <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white cursor-pointer'>Learn More</p>
+          <p className='text-lg md:text-xl lg:text-3xl text-center'>Intelligent Urban Planning for Sustainable and Adaptive Growth</p>
+
         </div>
         <div className='w-[80%] mx-auto py-5'>
-          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/smart_city.png" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
+          <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/city_planning/smart_city.png" alt="bg" className="lg:w-[80%] mx-auto rounded-lg object-cover" />
         </div>
       </div>
 
       <div className="relative mt-20 border-neutral-800 py-10 max-w-7xl mx-auto">
       <div className="text-center">
-        <span className="text-5xl bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
+        <span className="text-4xl lg:text-5xl bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
           Key Feature
         </span>
 
       </div>
-      <div className="grid md:grid-cols-3 gap-10 mt-10 lg:mt-20 pb-10">
+      <div className="grid md:grid-cols-3 gap-10 mt-10 lg:mt-20 pb-10 px-2">
         {features.map((feature, index) => (
           <div key={index} className="w-full">
             <div className="flex">
-              <div className="flex mx-6 h-14 w-14 px-4 bg-orange-500 text-white text-xl justify-center items-center rounded-lg">
+              <div className="flex mx-6 h-14 w-14 px-4 bg-orange-500 text-white text-lg lg:text-xl justify-center items-center rounded-lg">
                 {feature.icon}
               </div>
               <div>
-                <h5 className="mt-1 mb-2 text-2xl font-semibold text-gray-700">{feature.text}</h5>
+                <h5 className="mt-1 mb-2 text-xl lg:text-2xl font-semibold text-gray-700">{feature.text}</h5>
                 <p className='text-gray-700'>{feature.description}</p>
               </div>
             </div>
@@ -162,7 +162,7 @@ const features = [
 
       <div className="text-center ">
         <div className='py-5 mt-10'>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl tracking-wide">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-wide">
             <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
             Applications
             </span>
@@ -170,12 +170,12 @@ const features = [
         </div>
       </div>
       
-      <div className="pb-20 my-10 bg-white">
+      <div className="pb-20 lg:mt-10 bg-white">
       <div
         ref={containerRef}
         className="w-full overflow-x-auto scrollbar-hide cursor-grab"
       >
-        <div className="flex space-x-16 w-max px-24">
+        <div className="flex space-x-16 w-max px-5 lg:px-24">
           {sectors.map((sector, index) => (
             <Sector_Card
               key={index}

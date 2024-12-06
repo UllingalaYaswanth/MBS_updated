@@ -7,8 +7,8 @@ const Navbar = () => {
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // Track which dropdown is open
 
   const navItems = [
-    { label: "HOME", href: "#home", dropdownItems: [] },
-    { label: "ABOUT US", href: "/about", dropdownItems: [] },
+    // { label: "HOME", href: "#home", dropdownItems: [] },
+    
     { label: "SOLUTIONS", href: "#solutions",dropdownItems: [
       { label: 'Smart City Planing', href: '/Product1' },
       { label: 'Telecom Tower Reconstruction', href: '/Product2' },
@@ -21,6 +21,7 @@ const Navbar = () => {
       { label: 'Computer Vision', href: '/cv_page' },
       { label: 'Document Intelligence', href: '/aadhya_page' },
     ] },
+    { label: "ABOUT US", href: "/about", dropdownItems: [] },
     { label: "CONTACT US", href: "#footer", dropdownItems: [] },
   ];
 

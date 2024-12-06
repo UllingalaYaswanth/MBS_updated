@@ -30,12 +30,12 @@ function CV() {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="h-[800px] flex items-center pl-20">
+    <div ref={vantaRef} className="h-[600px] md:h-[800px] flex items-center px-10 md:pl-20">
       <div className="flex flex-col">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold ">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold ">
           Computer <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text"> Vision</span>
         </h1>
-        <p className="mt-10 text-md mg:text-lg lg:text-xl text-neutral-500 max-w-3xl">
+        <p className="mt-10 text-md mg:text-lg lg:text-xl text-neutral-700 max-w-3xl">
         At mbs, we are pioneers in computer vision technology, dedicated to transforming industries
         through innovative visual data analysis. With a focus on machine learning and artificial
         intelligence, our mission is to empower businesses by providing advanced solutions that

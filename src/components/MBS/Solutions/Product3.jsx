@@ -2,7 +2,6 @@ import Footer from "../../Footer";
 import Navbar from "../../Navbar";
 import React, { useRef, useState,useEffect } from 'react';
 import Sector_Card from '../Sector_Card';
-import nf from "../sprayer_drone500.webp"
 
 import { Monitor, Database, Crop, Truck, TrendingUp } from "lucide-react";  // Importing relevant icons
 
@@ -49,7 +48,7 @@ const Product3 = () => {
     {
       title: "Growers",
       description: "Neural Farms provides powerful tools and insights specifically designed for growers to optimize every stage of crop production.",
-      imgSrc: nf, // Replace with an image relevant to growers or crop production
+      imgSrc: "https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/growers.webp", // Replace with an image relevant to growers or crop production
     },
     {
       title: "Supply Chain Management",
@@ -110,15 +109,14 @@ const Product3 = () => {
 
   
   return (
-    <div className="relative border-neutral-800 min-h-[600px] bg-white text-black">
+    <div className="relative border-neutral-800 bg-white text-black">
       <Navbar />
       <div className='bg-white'>
-        <div className="h-[700px] flex flex-col justify-center items-center text-black">
-          <h1 className="text-8xl font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">Neural Farms Platform</h1>
-          <p className='mt-10 text-3xl text-center'>Revolutionizing Sustainable Farming with Advanced Drone and AI Capabilities</p>
-          <p className='px-6 py-2 rounded-md border mt-16 hover:text-white hover:bg-gray-200 text-xl shadow-lg bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-white'>Learn More</p>
+        <div className="h-[400px] md:h-[500px] lg:h-[600px] text-center px-3 flex flex-col justify-center items-center text-black">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl py-10 font-bold mt-10 bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">Neural Farms Platform</h1>
+          <p className='text-lg md:text-xl lg:text-3xl text-center'>Revolutionizing Sustainable Farming with Advanced Drone and AI Capabilities</p>
         </div>
-        <div className='w-[80%] mx-auto py-5'>
+        <div className='lg:w-[80%] mx-auto py-5'>
           <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Mbs_main/solutions/neural_farms/Neural_Farms.jpg" alt="bg" className="w-[80%] mx-auto rounded-lg object-cover" />
         </div>
       </div>
@@ -130,7 +128,7 @@ const Product3 = () => {
         </span>
 
       </div>
-      <div className="grid md:grid-cols-3 gap-10 mt-10 lg:mt-20 pb-10">
+      <div className="grid md:grid-cols-3 gap-10 mt-10 lg:mt-20 pb-10 px-2">
         {features.map((feature, index) => (
           <div key={index} className="w-full">
             <div className="flex">
@@ -138,7 +136,7 @@ const Product3 = () => {
                 {feature.icon}
               </div>
               <div>
-                <h5 className="mt-1 mb-2 text-2xl font-semibold text-gray-700">{feature.text}</h5>
+                <h5 className="mt-1 mb-2 text-xl lg:text-2xl font-semibold text-gray-700">{feature.text}</h5>
                 <p className='text-gray-700'>{feature.description}</p>
               </div>
             </div>
@@ -150,7 +148,7 @@ const Product3 = () => {
 
       <div className="text-center ">
         <div className='py-5 mt-10'>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl tracking-wide">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-wide">
             <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent bg-clip-text">
             Crop Management
             Applications
@@ -161,9 +159,9 @@ const Product3 = () => {
       <div className="pb-20 mt-10 bg-white ">
       <div
         ref={containerRef}
-        className="w-full overflow-x-auto scrollbar-hide cursor-grab"
+        className="w-full overflow-x-auto scrollbar-hide cursor-grab "
       >
-        <div className="flex space-x-16 w-max px-20">
+        <div className="flex space-x-16 w-max px-6 md:px-36 lg:px-56 trasition-all duration-500 ease-in-out">
           {sectors.map((sector, index) => (
             <Sector_Card
               key={index}

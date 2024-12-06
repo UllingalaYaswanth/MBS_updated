@@ -37,7 +37,7 @@ const Hero = () => {
 
   return (
     <Section
-      className="pt-[20rem] -mt-[5.25rem]" // Adjusted top padding for heading
+      className=" pt-[10rem] lg:pt-[20rem] -mt-[5.25rem]" // Adjusted top padding for heading
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -48,15 +48,15 @@ const Hero = () => {
 
       <div className="container relative z-10" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[10rem]">
-        <h1 className="h1 mb-6">
+        <h1 className="h1 mb-6 text-5xl md:text-6xl lg:text-7xl text-center">
   
-          <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent text-bold bg-clip-text text-7xl">
+          <span className="bg-gradient-to-r from-pink-600 via-orange-600 to-orange-400 text-transparent text-bold bg-clip-text py-5">
           Transforming Language
           </span>
-          <span className="text-bold"> Intelligence &nbsp;</span>
+          <p className="mt-2"> Intelligence</p>
     
           </h1>
-          <p className="max-w-3xl text-xl mx-auto mb-6 text-n-2 lg:mb-8 mt-10 text-gray-900">
+          <p className="max-w-3xl text-xl md:text-2xl lg:text-3xl mx-auto mb-6 text-n-2 lg:mb-8 mt-10 text-gray-900">
             Unleash the power of AI with Adhya.
           </p>
         </div>
@@ -64,7 +64,7 @@ const Hero = () => {
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+              <div className="aspect-[75/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
                   src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Document_Intelligence/Welcome_page.png" // Using the user_page1 image
                   className="w-full h-full object-cover" // Full width and height, cover the background
