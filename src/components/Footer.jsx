@@ -75,7 +75,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 text-start px-10 max-w-6xl w-full">
+        <div className="grid md:grid-cols-3 text-start gap-10 px-10 max-w-6xl w-full">
           {/* Contact Section */}
           <div className="flex gap-20 md:flex-col">
             <div className="space-y-4">
