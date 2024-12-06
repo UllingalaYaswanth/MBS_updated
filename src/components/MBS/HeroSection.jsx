@@ -9,12 +9,12 @@ const HeroSection = () => {
           el: vantaRef.current,
           mouseControls: true,
           touchControls: true,
-          gyroControls: true,
+          gyroControls: false,
           minHeight: 100.0,
           minWidth: 100.0,
-          scale: 0.5,
+          scale: 1,
           spacing:20.00,
-          scaleMobile: 1.0,
+          scaleMobile: 0.85,
           color: 0xff5100,
           birdSize: 0.90,
           backgroundColor:0xffffff ,
@@ -36,7 +36,7 @@ const HeroSection = () => {
       <h1 className="text-4xl sm:text-6xl lg:text-8xl tracking-wide mt-2 text-black">
         for industry and society
       </h1>
-      <p className="mt-10 text-xl md:text-2xl lg:text-4xl text-neutral-500 max-w-4xl px-2 ">
+      <p className="mt-10 text-xl md:text-2xl lg:text-4xl text-neutral-700 max-w-4xl px-2 ">
        Our
         intelligent solutions bridge today's challenges with tomorrow's
         possibilities
