@@ -71,6 +71,12 @@ const Products = () => {
               AADHYA - AI-powered Organizational GPT
               </h1>
             </Link>
+            <Link target="blank" to="/cv_page" className="relative h-[50vh] rounded overflow-hidden group hover:scale-105 duration-500 border-2">
+              <img src="https://mbs-data-bucket.s3.ap-south-1.amazonaws.com/website/images/Computer_Vision/Vision_Cutting_edge.jpg" alt="Titanium Feature 2" className="w-full h-full lg:object-cover" />
+              <h1 className="text-xl text-white absolute bottom-5 left-10 bg-black bg-opacity-50 p-4 rounded-lg opacity-0 transform translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+              Security And Surveillance
+              </h1>
+            </Link>
           </div>
         </div>
       </div>
