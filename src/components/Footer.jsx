@@ -75,7 +75,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 text-start gap-10 px-10 max-w-6xl w-full">
+        <div className="grid md:grid-cols-3 text-start px-10 max-w-6xl w-full">
           {/* Contact Section */}
           <div className="flex gap-20 md:flex-col">
             <div className="space-y-4">
@@ -101,9 +101,9 @@ const Footer = () => {
           </div>
 
           {/* Products Section */}
-          <div className='md:flex hidden'>
+          <div className='md:flex flex-col hidden ml-28'>
             <h1 className="text-[#EA5C5F] text-lg text-start">Our Products</h1>
-            <div className="text-start space-y-7 mt-4">
+            <div className="text-start space-y-7 ">
               <a href="/towers_page">
                 <p className="mt-4">Digital Twin</p>
               </a>
