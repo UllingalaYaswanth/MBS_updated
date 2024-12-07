@@ -373,9 +373,9 @@ const TabSelector = () => {
 
       {/* Mobile View with Horizontal Scroll */}
       <div className="lg:hidden">
-        <div className="overflow-x-auto flex pb-8 s">
+        <div className="overflow-x-auto flex pb-8">
           {tabData.map(({ id, title, description, imageSrc }) => (
-            <div key={id} className="w-[400px] flex-shrink-0">
+            <div key={id} className="w-[350px] flex-shrink-0">
               <div className={`p-4`}>
                 <div className="flex flex-col items-center space-y-10">
                   {/* Title and Description */}
@@ -388,7 +388,7 @@ const TabSelector = () => {
                     </p>
                   </div>
                   {/* Image */}
-                  <img src={imageSrc} alt={id} className="w-full mt-2 md:w-[700px] rounded-md" />
+                  <img src={imageSrc} alt={id} className="w-full md:w-[700px] rounded-md" />
                 </div>
               </div>
             </div>
